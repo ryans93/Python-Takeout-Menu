@@ -30,7 +30,7 @@ def place_order(menu):
     # TODO: Create a continuous while loop so customers can order multiple items
     while True:
         # TODO: Ask the customer what they want to order
-        order = input("What would you like to order? ")
+        print("What would you like to order? ")
 
         # Create a variable for the menu item number
         i = 1
@@ -46,7 +46,6 @@ def place_order(menu):
             for meal, price in options.items():
 
                 # Print the menu item number, food category, meal, and price
-                print(f"{i}. {category} - {meal} | ${price}")
                 # TODO: Only if you used different variable names
                 # TODO: Update the variable names in the following function
                 print_menu_line(i, category, meal, price)
